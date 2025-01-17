@@ -41,7 +41,7 @@ app-debug.apk is directly available to download and test the app
 
 ## **Dependencies Used**
 
-Here are the main libraries and tools used in this project:
+Here are the main libraries and tools used in this project
 
 ---
 
