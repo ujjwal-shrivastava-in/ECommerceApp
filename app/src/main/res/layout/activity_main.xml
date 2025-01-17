@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.MainActivity"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true">
+	<com.google.android.material.appbar.MaterialToolbar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:contentInsetStart="0dp">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingHorizontal="16dp">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textStyle="bold"
+				android:textSize="18sp"
+				android:textColor="#4869C2"/>
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:id="@+id/open_cart"
+				android:background="?android:selectableItemBackground"
+				android:src="@drawable/cart_icon"/>
+		</RelativeLayout>
+	</com.google.android.material.appbar.MaterialToolbar>
+
+	<com.google.android.material.progressindicator.LinearProgressIndicator
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:indeterminate="true"
+		android:indeterminateTint="#4869C2"
+		android:id="@+id/progress_bar"
+		android:layout_marginBottom="10dp"/>
+
+	<com.google.android.material.textview.MaterialTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Products"
+		android:textStyle="bold"
+		android:layout_marginHorizontal="16dp"
+		android:layout_marginBottom="10dp"/>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/recyclerView"
+		tools:listitem="@layout/item_product"/>
+
+</LinearLayout>
