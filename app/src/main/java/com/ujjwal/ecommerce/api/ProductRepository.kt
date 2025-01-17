@@ -2,15 +2,17 @@ package com.ujjwal.ecommerce.api
 
 import com.ujjwal.ecommerce.model.Product
 import javax.inject.Inject
-// ProductRepository
+
+// ProductRepository Class
 class ProductRepository @Inject constructor(private val apiService: ProductApiService) {
-	// fetchProducts
+
+	// fetchProducts Function
 	suspend fun fetchProducts(): List<Product> {
-		val response = apiService.getProducts()
+		val response = apiService.getProducts()  // Make API call to fetch products
 		if (response.isSuccessful) {
-			return response.body() ?: throw Exception("No products found.")
+			return response.body() ?: throw Exception("No products found.")  // Return products if successful
 		} else {
-			throw Exception("Error: ${response.code()} ${response.message()}")
+			throw Exception("Error: ${response.code()} ${response.message()}")  // Handle error response
 		}
 	}
 }

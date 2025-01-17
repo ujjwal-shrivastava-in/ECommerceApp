@@ -5,12 +5,16 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	app:cardCornerRadius="10dp"
 	android:layout_marginBottom="5dp">
+
+	<!-- Main LinearLayout to wrap content -->
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="vertical"
 		android:padding="8dp"
 		android:gravity="center_vertical">
+
+		<!-- Layout for the image and product details -->
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
@@ -21,6 +25,8 @@
 				android:layout_marginEnd="14dp"
 				android:scaleType="centerCrop"
 				android:contentDescription="Product Image" />
+
+			<!-- Product name and price details -->
 			<LinearLayout
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
@@ -42,12 +48,16 @@
 					android:layout_marginTop="4dp" />
 			</LinearLayout>
 		</LinearLayout>
+
+		<!-- Quantity adjustment and remove button -->
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="horizontal"
 			android:layout_marginTop="8dp"
 			android:gravity="end">
+
+			<!-- Decrease button -->
 			<TextView
 				android:id="@+id/decreaseButton"
 				android:layout_width="40dp"
@@ -58,6 +68,8 @@
 				android:background="@android:color/holo_red_light"
 				android:textColor="@android:color/white"
 				android:textStyle="bold" />
+
+			<!-- Quantity display -->
 			<TextView
 				android:id="@+id/quantity"
 				android:layout_width="40dp"
@@ -69,6 +81,8 @@
 				android:textStyle="bold"
 				android:background="@android:color/darker_gray"
 				android:textColor="@android:color/white" />
+
+			<!-- Increase button -->
 			<TextView
 				android:id="@+id/increaseButton"
 				android:layout_width="40dp"
@@ -79,6 +93,8 @@
 				android:background="@android:color/holo_green_light"
 				android:textColor="@android:color/white"
 				android:textStyle="bold" />
+
+			<!-- Remove button -->
 			<com.google.android.material.button.MaterialButton
 				android:id="@+id/removeButton"
 				android:layout_width="wrap_content"
