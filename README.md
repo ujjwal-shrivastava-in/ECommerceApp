@@ -9,6 +9,12 @@ This project demonstrates a fully functional e-commerce application that meets t
 The task involved creating an e-commerce app with the following requirements:
 
 
+
+### **APK**
+app-debug.apk is directly available to download and test the app
+
+
+
 ### **1. Product Listing**
 - Fetch products from an API and display them in a user-friendly interface.
 - Show details like product name, image, price, and an "Add to Cart" button.
@@ -31,10 +37,6 @@ The task involved creating an e-commerce app with the following requirements:
 ### **5. Additional Requirements**
 - Use modern tools like Hilt for dependency injection.
 - Implement responsive and intuitive UI designs.
-
-
-### **APK**
-app-debug.apk is directly available to download and test the app
 
 
 ## **Dependencies Used**
