@@ -33,6 +33,10 @@ The task involved creating an e-commerce app with the following requirements:
 - Implement responsive and intuitive UI designs.
 
 
+### **APK**
+app-debug.apk is directly available to download and test the app
+
+
 ## **Dependencies Used**
 
 Here are the main libraries and tools used in this project:
