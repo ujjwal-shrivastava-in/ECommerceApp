@@ -37,6 +37,7 @@ The task involved creating an e-commerce app with the following requirements:
 
 Here are the main libraries and tools used in this project:
 
+---
 
 ```gradle
 // Glide
