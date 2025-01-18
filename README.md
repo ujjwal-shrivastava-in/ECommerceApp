@@ -11,6 +11,7 @@ This project demonstrates a fully functional e-commerce application developed us
 3. [APK](#apk)
 4. [Project Structure](#project-structure)
 5. [Dependencies Used](#dependencies-used)
+6. [Challenges Faced](#challenges-faced)
 
 ---
 
@@ -119,3 +120,16 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 // LiveData and ViewModel
 implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
 implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+```
+
+## **Challenges Faced**
+
+During the development of this e-commerce application, I encountered the following challenges:
+
+### **1. Understanding Dagger Hilt**
+- **Challenge:** As a beginner in dependency injection, understanding the lifecycle of components and how Dagger Hilt works was quite difficult. Setting up modules, injecting dependencies, and managing scopes was initially confusing.
+- **Solution:** I referred to the [official Dagger Hilt documentation](https://developer.android.com/training/dependency-injection/hilt-android) and watched tutorials to understand the concepts. Implementing a small sample project with Hilt helped me grasp the basics before integrating it into the app.
+
+---
+
+By overcoming these challenges, I gained valuable experience in implementing dependency injection and improved my understanding of Android's modern development practices.
