@@ -9,10 +9,8 @@ This project demonstrates a fully functional e-commerce application developed us
 1. [Task Overview](#task-overview)
 2. [Features](#features)
 3. [APK](#apk)
-4. [Dependencies Used](#dependencies-used)
-5. [Project Structure](#project-structure)
-6. [Screenshots](#screenshots)
-7. [Installation and Build](#installation-and-build)
+4. [Project Structure](#project-structure)
+5. [Dependencies Used](#dependencies-used)
 
 ---
 
@@ -54,6 +52,45 @@ The app meets the following task requirements:
 You can directly download the [app-debug.apk](#) to test the app.
 
 ---
+
+## **Project Structure**
+```
+ECommerceApp/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/ujjwal/ecommerce/
+│   │   │   │   ├── activity/
+│   │   │   │   │   ├── MainActivity.kt            # Main entry point of the app
+│   │   │   │   │   ├── adapter/                   # RecyclerView adapters
+│   │   │   │   │   │   ├── CartAdapter.kt         # Adapter for displaying cart items
+│   │   │   │   │   │   ├── ProductAdapter.kt      # Adapter for displaying product listings
+│   │   │   │   ├── api/
+│   │   │   │   │   ├── NetworkModule.kt           # Hilt module for API-related dependencies
+│   │   │   │   │   ├── ProductApiService.kt       # Retrofit API service interface
+│   │   │   │   │   ├── ProductRepository.kt       # Repository for product-related data
+│   │   │   │   │   ├── ProductViewModel.kt        # ViewModel for product-related operations
+│   │   │   │   ├── application/
+│   │   │   │   │   ├── ECommerceApp.kt            # Application class for global setup
+│   │   │   │   ├── database/
+│   │   │   │   │   ├── CardDao.kt                 # DAO interface for cart operations
+│   │   │   │   │   ├── CartDatabase.kt            # Room database instance
+│   │   │   │   │   ├── CartItem.kt                # Data class for cart item
+│   │   │   │   │   ├── CartRepository.kt          # Repository for cart-related data
+│   │   │   │   │   ├── CartViewModel.kt           # ViewModel for cart-related operations
+│   │   │   │   │   ├── DatabaseModule.kt          # Hilt module for database dependencies
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── Product.kt                 # Data class for product details
+│   │   ├── res/
+│   │   │   ├── layout/                            # XML layout files
+│   │   │   ├── drawable/                          # Icons and images
+│   │   │   ├── values/                            # Strings, colors, themes
+│   ├── build.gradle                               # Module-level Gradle build script
+├── gradle/                                        # Gradle wrapper files
+├── README.md                                      # Project documentation
+├── build.gradle                                   # Top-level Gradle build script
+├── settings.gradle                                # Gradle settings file
+```
 
 ## **Dependencies Used**
 
